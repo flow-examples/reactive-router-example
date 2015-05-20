@@ -1,0 +1,14 @@
+<template name="layout">
+  <a href="/">Home</a> | 
+  <a href="/post/sds">Post</a> 
+  {{> Template.dynamic template=type}}
+</template>
+
+<template name="post">
+  <h1>This is the post</h1>
+  <p>Param: {{currentParam}}</p>
+</template>
+
+<template name="home">
+  <h1>Home here</h1>
+</template>
