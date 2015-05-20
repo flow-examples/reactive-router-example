@@ -7,7 +7,7 @@ Template.post.helpers({
   }
 });
 
-Template.post.onRendered(function() {
+Template.post.onCreated(function() {
   this.autorun(function() {
     var id = FlowRouter.getParam("id");
     console.log("AUTORUN getParam:", id);
